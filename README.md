@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 Smart Campus Hub
 
 A modern React.js web portal for university students — combining class schedules, assignment reminders, notice board, study materials, and event announcements into one platform.
@@ -119,3 +120,7 @@ smart-campus-hub/
 
 This project is for academic purposes only.  
 Muhammad Ali Jinnah University — BS Computer Science Semester Project 2025
+=======
+# smart-campus-hub
+Smart Campus Hub — A React.js student portal for MAJU with class schedules, assignments, notice board, and study materials.
+>>>>>>> 0281e89149bfd129b917b0e07fe14c0e8b9f0ec2
