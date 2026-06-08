@@ -120,6 +120,4 @@ smart-campus-hub/
 This project is for academic purposes only.  
 Muhammad Ali Jinnah University — BS Computer Science Semester Project 2025
 =======
-# smart-campus-hub
-Smart Campus Hub — A React.js student portal for MAJU with class schedules, assignments, notice board, and study materials.
 
