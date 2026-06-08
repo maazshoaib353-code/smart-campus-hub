@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🎓 Smart Campus Hub
 
 A modern React.js web portal for university students — combining class schedules, assignment reminders, notice board, study materials, and event announcements into one platform.
