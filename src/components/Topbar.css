@@ -1,0 +1,91 @@
+.topbar {
+  height: 64px;
+  background: var(--white);
+  border-bottom: 1px solid #E2E8F0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.topbar-left { display: flex; align-items: center; gap: 14px; }
+.topbar-right { display: flex; align-items: center; gap: 12px; }
+
+.toggle-btn {
+  background: none; border: none;
+  font-size: 1.2rem; color: var(--gray);
+  padding: 6px; border-radius: 8px;
+  transition: background 0.15s;
+}
+.toggle-btn:hover { background: var(--lgray); }
+
+.screen-title { font-size: 1.1rem; font-weight: 600; color: var(--navy); }
+
+.search-box {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--lgray); border-radius: 8px;
+  padding: 7px 14px;
+}
+.search-icon { font-size: 0.85rem; }
+.search-input {
+  background: none; border: none; outline: none;
+  font-size: 0.875rem; color: var(--dark); width: 160px;
+}
+.search-input::placeholder { color: var(--gray); }
+
+.notif-wrap { position: relative; }
+.icon-btn {
+  position: relative; background: none; border: none;
+  font-size: 1.15rem; padding: 6px; border-radius: 8px;
+  transition: background 0.15s;
+}
+.icon-btn:hover { background: var(--lgray); }
+.notif-badge {
+  position: absolute; top: 2px; right: 2px;
+  background: var(--red); color: white;
+  font-size: 0.6rem; font-weight: 700;
+  min-width: 16px; height: 16px; border-radius: 999px;
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 3px;
+}
+.notif-dropdown {
+  position: absolute; top: calc(100% + 8px); right: 0;
+  background: white; border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  min-width: 260px; overflow: hidden;
+  border: 1px solid #E2E8F0;
+}
+.notif-item {
+  padding: 12px 16px; font-size: 0.84rem;
+  color: var(--dark); border-bottom: 1px solid #F1F5F9;
+  transition: background 0.15s;
+}
+.notif-item:last-child { border-bottom: none; }
+.notif-item:hover { background: var(--lgray); }
+
+.topbar-avatar {
+  width: 36px; height: 36px; border-radius: 50%;
+  background: var(--blue); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem;
+}
+
+/* ── Mobile Topbar ── */
+@media (max-width: 768px) {
+  .topbar {
+    padding: 0 12px;
+    height: 56px;
+  }
+  /* Hide search on mobile — saves space */
+  .search-box { display: none; }
+
+  .screen-title { font-size: 0.95rem; }
+
+  .notif-dropdown {
+    right: -8px;
+    min-width: 220px;
+  }
+}

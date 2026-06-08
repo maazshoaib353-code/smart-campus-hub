@@ -1,0 +1,95 @@
+.sidebar {
+  position: fixed;
+  top: 0; left: 0;
+  height: 100vh;
+  height: 100dvh; /* Capacitor: use dynamic viewport height */
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease, transform 0.3s ease;
+  z-index: 100;
+  overflow: hidden;
+}
+.sidebar.open   { width: var(--sidebar); }
+.sidebar.closed { width: 64px; }
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  white-space: nowrap;
+}
+.brand-icon { font-size: 1.5rem; flex-shrink: 0; }
+.brand-name { font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 1.1rem; color: #fff; }
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  margin: 12px 10px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 1rem;
+  flex-shrink: 0;
+}
+.user-name { color: #fff; font-size: 0.85rem; font-weight: 600; }
+.user-roll { color: #94A3B8; font-size: 0.72rem; margin-top: 2px; }
+
+.sidebar-nav {
+  flex: 1;
+  padding: 8px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  color: #94A3B8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  transition: all 0.15s;
+  width: 100%;
+}
+.nav-item:hover { background: rgba(255,255,255,0.07); color: #fff; }
+.nav-item.active { background: var(--blue); color: #fff; }
+
+.nav-icon { font-size: 1.1rem; flex-shrink: 0; }
+.nav-label { white-space: nowrap; }
+
+.sidebar-logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 8px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  background: rgba(239,68,68,0.1);
+  border: none;
+  color: #FCA5A5;
+  font-size: 0.875rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+.sidebar-logout:hover { background: rgba(239,68,68,0.2); color: #FEE2E2; }
