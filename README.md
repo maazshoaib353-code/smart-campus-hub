@@ -1,6 +1,6 @@
 # 🎓 Smart Campus Hub
 
-A modern React.js web portal for university students — combining class schedules, assignment reminders, notice board, study materials, and event announcements into one platform.
+A modern React.js web portal for university students combining class schedules, assignment reminders, notice board, study materials, and event announcements into one platform.
 
 **Developed by:** Maaz (FA23-BSCS-0170) & Hasnain Raza  
 **University:** Muhammad Ali Jinnah University, Karachi  
@@ -118,6 +118,6 @@ smart-campus-hub/
 ## 📜 License
 
 This project is for academic purposes only.  
-Muhammad Ali Jinnah University — BS Computer Science Semester Project 2025
+Muhammad Ali Jinnah University BS Computer Science Semester Project 2025
 =======
 
